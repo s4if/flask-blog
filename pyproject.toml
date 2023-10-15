@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "flaskdemo"
+version = "0.1.0"
+description = ""
+authors = ["Saiful Habib <sangpejuang32@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+python-dotenv = "^1.0.0"
+watchdog = "^3.0.0"
+pytest = "^7.4.2"
+coverage = "^7.3.2"
+waitress = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["flaskdemo"]
