@@ -7,6 +7,8 @@ cara install
 ```bash
 # clone repository ini
 git clone https://github.com/s4if/flask-blog.git
+# masuk ke directory yang sudah di download
+cd flask-blog
 # build docker-nya
 docker build . -t "flask-blog"
 # jalankan dockernya
