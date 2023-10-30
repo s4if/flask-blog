@@ -1,8 +1,8 @@
 # non-lokal
-#FROM python:bookworm
+FROM python:alpine
 
 # lokal lab
-FROM 192.168.150.14:5000/python:bookworm
+#FROM 192.168.150.14:5000/python:alpine
 
 WORKDIR /app
 
