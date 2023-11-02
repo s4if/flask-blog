@@ -13,3 +13,4 @@ COPY . .
 RUN flask --app flaskdemo init-db
 
 CMD [ "python", "wsgi_start.py" ]
+EXPOSE 8080

@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  flblog:
+    build: .
+    entrypoint: sh -c "flask --app flaskdemo init-db && python wsgi_start.py"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./instance:/app/instance
+    restart: unless-stopped
